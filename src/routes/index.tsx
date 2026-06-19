@@ -502,7 +502,7 @@ function FAQ({ openFaq, setOpenFaq }: { openFaq: number | null; setOpenFaq: (n: 
 
 const FAQS = [
   { q: "Does QuickDine process restaurant payments?", a: "QuickDine is a software subscription. We do not collect payments on behalf of restaurants. When restaurants choose to accept digital payments from their guests, payments are processed by integrated providers like Razorpay or Cashfree directly into the restaurant's own account." },
-  { q: "How do subscriptions work?", a: "QuickDine is billed monthly in INR. You pick a plan (Starter, Growth or Enterprise), pay via Razorpay/Cashfree, and get instant access. The subscription auto-renews each month and can be cancelled anytime from your dashboard." },
+  { q: "How do subscriptions work?", a: "QuickDine is a single plan billed at ₹499/month in INR. Pay via Razorpay/Cashfree and get instant access. The subscription auto-renews each month and can be cancelled anytime from your dashboard." },
   { q: "Can restaurants cancel anytime?", a: "Yes. You can cancel from your dashboard at any time. Cancellation stops future renewals; your plan remains active until the end of the current billing cycle." },
   { q: "What support is provided?", a: "All plans include email support. Growth includes priority chat support. Enterprise includes a dedicated success manager with an SLA. Support is available Mon–Sat, 10:00–19:00 IST." },
   { q: "Is QuickDine a payment, lending or crypto product?", a: "No. QuickDine is a SaaS platform for restaurants. We are not a lender, not a crypto exchange, and we do not deal in any prohibited categories. Restaurants subscribe to use our software." },
