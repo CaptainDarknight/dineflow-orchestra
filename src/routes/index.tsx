@@ -345,48 +345,26 @@ function PricingInline() {
 
 function PriceCards() {
   return (
-    <div className="price-grid">
-      <div className="price">
-        <div className="price-name">Starter</div>
-        <div className="price-amt">₹499<small>/month</small></div>
-        <div className="price-sub">For single-location cafés getting started with QR ordering.</div>
-        <ul className="price-feat">
-          <li>QR ordering for up to 15 tables</li>
-          <li>Digital menu management</li>
-          <li>Basic analytics</li>
-          <li>Email support</li>
-        </ul>
-        <button className="btn btn-ghost">Start with Starter</button>
-      </div>
+    <div className="price-grid" style={{ gridTemplateColumns: "minmax(0,520px)", justifyContent: "center" }}>
       <div className="price featured">
-        <span className="badge-pop">Most popular</span>
-        <div className="price-name">Growth</div>
-        <div className="price-amt">₹999<small>/month</small></div>
-        <div className="price-sub">For busy restaurants that need the kitchen display and table management.</div>
+        <span className="badge-pop">All-in-one</span>
+        <div className="price-name">QuickDine</div>
+        <div className="price-amt">₹499<small>/month</small></div>
+        <div className="price-sub">Everything your restaurant needs, in one simple monthly subscription.</div>
         <ul className="price-feat">
           <li>Unlimited tables & QR codes</li>
+          <li>Digital menu management</li>
           <li>Kitchen Display System (KDS)</li>
-          <li>Table management & floor view</li>
-          <li>Advanced analytics & exports</li>
-          <li>Priority chat support</li>
+          <li>Table management & live floor view</li>
+          <li>Sales & item analytics</li>
+          <li>Priority email & chat support</li>
         </ul>
-        <button className="btn btn-primary">Choose Growth</button>
-      </div>
-      <div className="price">
-        <div className="price-name">Enterprise</div>
-        <div className="price-amt">Custom<small></small></div>
-        <div className="price-sub">For multi-location groups, cloud kitchens and chains.</div>
-        <ul className="price-feat">
-          <li>Multi-outlet dashboard</li>
-          <li>Custom integrations</li>
-          <li>Dedicated success manager</li>
-          <li>SLA-backed support</li>
-        </ul>
-        <button className="btn btn-ghost">Contact sales</button>
+        <button className="btn btn-primary">Get started — ₹499/month</button>
       </div>
     </div>
   );
 }
+
 
 function Features() {
   return (
@@ -524,7 +502,7 @@ function FAQ({ openFaq, setOpenFaq }: { openFaq: number | null; setOpenFaq: (n: 
 
 const FAQS = [
   { q: "Does QuickDine process restaurant payments?", a: "QuickDine is a software subscription. We do not collect payments on behalf of restaurants. When restaurants choose to accept digital payments from their guests, payments are processed by integrated providers like Razorpay or Cashfree directly into the restaurant's own account." },
-  { q: "How do subscriptions work?", a: "QuickDine is billed monthly in INR. You pick a plan (Starter, Growth or Enterprise), pay via Razorpay/Cashfree, and get instant access. The subscription auto-renews each month and can be cancelled anytime from your dashboard." },
+  { q: "How do subscriptions work?", a: "QuickDine is a single plan billed at ₹499/month in INR. Pay via Razorpay/Cashfree and get instant access. The subscription auto-renews each month and can be cancelled anytime from your dashboard." },
   { q: "Can restaurants cancel anytime?", a: "Yes. You can cancel from your dashboard at any time. Cancellation stops future renewals; your plan remains active until the end of the current billing cycle." },
   { q: "What support is provided?", a: "All plans include email support. Growth includes priority chat support. Enterprise includes a dedicated success manager with an SLA. Support is available Mon–Sat, 10:00–19:00 IST." },
   { q: "Is QuickDine a payment, lending or crypto product?", a: "No. QuickDine is a SaaS platform for restaurants. We are not a lender, not a crypto exchange, and we do not deal in any prohibited categories. Restaurants subscribe to use our software." },
